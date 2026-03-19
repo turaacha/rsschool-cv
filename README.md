@@ -1,1 +1,1 @@
-# rsschool-cv
+https://turaacha.github.io/rsschool-cv/cv
