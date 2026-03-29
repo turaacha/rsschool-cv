@@ -87,11 +87,13 @@ h3 {
 
 h3 {
     text-align: left;
-    width: 30%;
-    height: 30px;
+    width: fit-content;
+    min-width: 250px;
+    height: auto;
+    min-height: 30px;
     background: linear-gradient(90deg, #af5308, #ffcc33);
     border-radius: 2px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 li {
@@ -131,8 +133,8 @@ img {
 }
 
 .project_img {
-    width: 400px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     border-radius: 5%;
     padding-bottom: 5px;
 }
