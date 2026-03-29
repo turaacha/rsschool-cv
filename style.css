@@ -41,8 +41,10 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: 18px;
+    padding: 0;
 }
 
 .nav-list a {
@@ -186,10 +188,10 @@ img {
 .footer_text {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 100px;
+    padding: 10px 20px;
 
 }
 
