@@ -1,4 +1,224 @@
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Geist Mono", monospace;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    background-color: #e06d0e;
+    width: 100%;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.nav-list a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Anek Tamil", sans-serif;
+    font-weight: 800;
+}
+
+.name-highlight {
+    color: #ee7715;
+}
+
+
+h3 {
+    text-align: left;
+    width: 30%;
+    height: 30px;
+    background: linear-gradient(90deg, #af5308, #ffcc33);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border-color: white;
+
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.education_year {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.project_img {
+    width: 400px;
+    height: 300px;
+    border-radius: 5%;
+    padding-bottom: 5px;
+}
+
+
+.project_links {
+    font-size: 18px;
+    padding: 20px;
+
+}
+
+.projectLinks a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.projectLinks a:hover {
+    color: #ee7715;
+}
+
+.code_link {
+
+    font-size: 18px;
+}
+
+.codeLink a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.codeLink a:hover {
+    color: #ee7715;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+
+/*footer*/
+
+#footer {
+    background-color: #e06d0e;
+    width: 100%;
+    color: black;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+
+}
+
+.github_link {
+    color: white;
+}
+
+.footer_text a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer_text a:hover {
+    color: white;
+}
+
+
+#rs_img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.image_link img {
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    max-width: 100%;
+}
+
+.image_link img:hover {
+    transform: scale(1.5);
 }
