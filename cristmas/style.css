@@ -1,0 +1,627 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(236, 243, 248, 1);
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*Header*/
+
+header {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.nav a,
+.logo {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    /* Плавность для цвета и фона */
+    display: flex;
+    align-items: center;
+}
+
+
+.nav a:hover,
+.logo:hover {
+    color: rgba(255, 70, 70, 1);
+    border-radius: 12px;
+    background-color: rgba(250, 204, 204, 0.822);
+    padding: 8px 16px;
+}
+
+
+.logo {
+    gap: 8px;
+    padding: 8px 16px;
+}
+
+.logo p {
+    margin: 0;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0;
+}
+
+.nav-link {
+    padding: 8px 20px;
+    display: block;
+}
+
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    background-color: rgba(255, 70, 70, 1);
+}
+
+
+/*hero*/
+
+.hero {
+    background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 524px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.gift_yourself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.Cursive_text {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: "Allura", cursive;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.18em;
+    /* 18% в em */
+    color: #FFFFFF;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+
+.button_explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 56px;
+    width: 235px;
+    background-color: #181C29;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button_explore:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+}
+
+
+/*about*/
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 648px;
+    width: 100%;
+    background-color: rgba(255, 70, 70, 1);
+    background-image: url('./assets/images/christmassnow.png');
+}
+
+.rectangle_about {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    width: 1276px;
+    height: 528px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Cursive_text2 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: "Allura", cursive;
+    color: rgba(255, 70, 70, 1);
+}
+
+.Text_section2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+
+.Text_section2 h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    margin: 0;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 148%;
+    font-size: 16px;
+}
+
+.image_santa {
+    flex: 1;
+}
+
+.image_santa img {
+    object-fit: cover;
+    display: block;
+    width: 638px;
+    height: 528px;
+    border-radius: 20px;
+    gap: Space 0;
+    opacity: 1;
+    padding: Space 0;
+}
+
+
+.slider_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.text_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_slider h2,
+.text_slider .Cursive_text {
+    margin: 5px;
+    padding: 0;
+
+}
+
+/* slider */
+
+.row_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 96px;
+    gap: 18px;
+    background-image: url('./assets/images/christmassnow.png');
+
+}
+
+.bigText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+
+}
+
+.row_image {
+    height: 200px;
+    width: 200px;
+}
+
+
+.row_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 95px;
+    gap: 20px;
+}
+
+.arrow-button1 {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff4d4d;
+    border: 1px solid white;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transform: scaleX(-1);
+}
+
+.arrow-button {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff4d4d;
+    border: 1px solid white;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.arrow-button:hover {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ffadad;
+    transform: scale(1.1);
+
+}
+
+.arrow-button1:hover {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ffadad;
+    transform: scaleX(-1.1);
+
+}
+
+/* Best_Gifts */
+
+.Best_Gifts {
+    background-image: url('./assets/images/christmassnow.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.best_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(236, 243, 248, 1);
+    border-radius: 20px;
+    margin: 0;
+}
+
+.card_1text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 310px;
+    height: 112px;
+    padding: Space 20;
+    gap: 8;
+    opacity: 1;
+    padding-top: 20px;
+
+}
+
+.img_cards {
+    width: 310px;
+    height: 230px;
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 8%;
+    font-style: SemiBold;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+}
+
+
+.h2_colorBlue,
+.h2_colorGreen,
+.h2_colorPink {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+
+h2,
+.Cursive_text {
+    margin: 10px;
+    padding: 0;
+}
+
+
+h3,
+h2 {
+    margin: 5px;
+    padding: 0;
+}
+
+.h2_colorBlue {
+    color: rgba(67, 97, 255, 1);
+}
+
+.h2_colorGreen {
+    color: rgba(6, 164, 79, 1);
+}
+
+.h2_colorPink {
+    color: rgba(255, 67, 247, 1);
+}
+
+
+
+/*CTA_section*/
+
+.CTA {
+    background-image: url('./assets/images/christmassnow.png'), url('./assets/images/CTA_snow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 120%, cover;
+    background-position: center;
+    width: 1440px;
+    height: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+    width: 344px;
+    height: 72px;
+    box-sizing: border-box;
+}
+
+.timer_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 30%;
+}
+
+.timer_code:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.timer_code h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0;
+}
+
+.timer_code h3 {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/*footer*/
+
+footer {
+    height: 496px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: #181C29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact_cards2 {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ECF3F8;
+    width: 417px;
+    height: 204px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.contact_cards2:hover {
+    background-color: #DDE7EF;
+    transform: translateY(-5px);
+}
+
+.contacts_info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contact_cards2 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 10px;
+}
+
+
+.footer_text .Cursive_text {
+    text-decoration: none;
+    color: #181C29;
+    transition: color 0.3s;
+}
+
+.footer_text .Cursive_text:hover {
+    color: #FF4646;
+
+}
