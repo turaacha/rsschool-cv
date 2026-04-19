@@ -127,8 +127,8 @@ header {
 
 .burger-menu span {
     position: absolute;
-    left: 20px;
-    width: 16px;
+    left: 23px;
+    width: 18px;
     height: 1px;
     background-color: black;
     transition: 0.3s;
@@ -704,7 +704,7 @@ footer {
     align-items: center;
     text-align: center;
     padding-top: 50px;
-    gap: 10px;
+    gap: 5px;
     color: #000;
 }
 
@@ -754,14 +754,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.gifts_h1 {
     background-image: url('./assets/images/bg-garland.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
     width: 100%;
+}
+
+.gifts_h1 {
+
     font-family: Montserrat;
     font-weight: 600;
     font-style: SemiBold;
@@ -771,7 +772,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 55px;
+    padding-top: 20px;
 }
 
 .tabs {
@@ -885,7 +886,7 @@ footer {
 
 
 .Cursive_text3 {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     font-size: 24px;
     font-weight: 400;
@@ -905,47 +906,142 @@ footer {
     padding: 0;
 }
 
+.btnUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fca9a9;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.btnUp:hover {
+    background-color: #e33e3e;
+
+}
 
 
 @media (max-width: 768px) {
+
+
     .section {
         width: 100%;
     }
 
+    .hero {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+        background-repeat: no-repeat;
+        background-size: 1250px auto;
+        background-position: center 1px;
+        min-height: 590px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself {
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself h1 {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .Cursive_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .About {
+        padding-top: -5px;
+        min-height: auto;
+    }
+
 
     .rectangle_about {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .image_santa img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    .contacts_cards {
-        flex-direction: column;
         display: flex;
-        width: 100%;
+        flex-direction: row;
         align-items: center;
-        gap: 20px;
+
     }
 
-    .contact_cards2 {
-        max-width: 100%;
-        width: 752px;
+    .Text_section2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: 376px;
+    }
+
+    .Text_section2 br {
+        display: none;
+    }
+
+
+    .image_santa {
+        width: 500px;
         height: auto;
-        margin-bottom: 20px;
+        max-width: 100%;
     }
 
-    .contacts_info {
-        font-size: 18px;
+    .slider_1 {
+        padding-top: 50px;
     }
+
+
+    .row_slider {
+        padding: 0;
+        margin-top: -18px;
+        margin-left: 5px;
+
+
+    }
+
+    .row_button {
+        padding: 0;
+        margin-top: -20px;
+    }
+
+
+    .Best_Gifts {
+        padding-top: 18px;
+    }
+
 
 
     header {
         padding: 0 20px;
+    }
+
+    .CTA {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/CTA_snow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100%, cover;
+        background-position: center 60px;
+        max-width: 768px;
+        width: 100%;
+        min-height: 668px;
+    }
+
+    .CTA_main {
+        padding-top: 80px;
+
+    }
+
+
+
+    .CTA_main h2 {
+        padding-bottom: 20px;
     }
 
 
@@ -959,9 +1055,41 @@ footer {
 
 
     .timer {
-        max-width: 310px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 344px;
 
     }
+
+    .footer container {
+        max-width: 768px;
+        width: 100%;
+        min-height: 928px;
+    }
+
+
+
+    .contacts_cards {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-top: 20px;
+
+    }
+
+    .contact_cards2 {
+        max-width: 100%;
+        width: 752px;
+        min-height: 204px;
+    }
+
+    .contacts_info {
+        font-size: 18px;
+    }
+
 
     .burger-menu {
         display: block;
@@ -996,6 +1124,7 @@ footer {
     }
 
 
+
     .card_1,
     .img_cards,
     .card_1text {
@@ -1007,19 +1136,26 @@ footer {
     .grid_container {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 20px;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
+        gap: 10px;
     }
 
+    .gifts-page .contacts_cards {
+        margin-top: -55px;
+        padding-top: 0;
+    }
 
-
-    .gifts_h1 {
-        margin-bottom: 20px;
-        text-align: center;
+    .gifts {
         background-image: url('./assets/images/bg-garland.png');
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
-        padding-top: 50px;
+    }
+
+    .gifts_h1 {
+        margin-bottom: -5px;
+        text-align: center;
+        padding-top: 60px;
     }
 
 
@@ -1027,7 +1163,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 0;
+        gap: 35px;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
@@ -1049,10 +1185,16 @@ footer {
 
     .logo {
         gap: 8px;
-        padding: 8px 20px;
+        padding: 8px 10px;
     }
 
+
+
 }
+
+
+
+
 
 
 
@@ -1063,16 +1205,130 @@ footer {
 }
 
 
+
+
+
+
 @media (max-width: 380px) {
+
+
+    .section {
+        width: 100%;
+    }
+
+    .hero {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+        background-repeat: no-repeat;
+        background-size: 1400px auto;
+        background-position: center 1px;
+        min-height: 590px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself {
+        margin-top: -10px;
+    }
+
+
+    .gift_yourself h1 {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .Cursive_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .About {
+        padding-top: 40px;
+        min-height: auto;
+    }
+
+    .About__container {
+        margin-top: 0;
+    }
+
+
+    .rectangle_about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Text_section2 {
+        padding-top: 20px;
+        width: 100%;
+        padding: 28px 18px;
+        margin: 0 auto;
+    }
+
+    .Text_section2 br {
+        display: none;
+    }
+
+    .image_santa {
+        padding-top: 15px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .slider_1 {
+        padding-top: 60px;
+    }
+
+
+    .row_slider {
+        padding: 0;
+        margin-top: -18px;
+        margin-left: 5px;
+
+
+    }
+
+    .row_button {
+        padding: 0;
+        margin-top: -20px;
+    }
+
+
+    .Best_Gifts {
+        padding-top: 18px;
+    }
+
+
     .contact_cards2 {
         width: 364px;
-        max-width: calc(100% - 16px);
+        height: 204px;
+        margin-bottom: 5px;
+        font-size: 24px;
     }
+
+
 
     .gifts_h1 {
         background-size: 100% auto;
         padding: 40px 10px 0px 10px;
-        margin-bottom: 0;
+        margin-top: 20px;
+
     }
+
+
+    .tabs-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+
+    }
+
+
 
 }

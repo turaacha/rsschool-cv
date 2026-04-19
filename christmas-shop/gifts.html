@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="gifts-page">
 
     <header class="container">
         <a href="index.html" class="logo">
@@ -23,8 +22,8 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link-active">GIFTS</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="#best" class="nav-link">BEST</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">ABOUT</a></li>
+                <li class="nav-item"><a href="index.html#best" class="nav-link">BEST</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">CONTACTS</a></li>
             </ul>
         </nav>
@@ -34,7 +33,6 @@
         </div>
     </header>
 
-
     <main class="container">
         <section class="gifts">
             <div class="gifts_main">
@@ -43,80 +41,88 @@
                     inner strength</h1>
                 <nav class="tabs">
                     <ul class="tabs-list">
-                        <li class="nav-item"><a class="nav-link-active1">ALL</a></li>
-                        <li class="nav-item"><a href="#FOR_WORK" class="nav-link">FOR WORK</a></li>
-                        <li class="nav-item"><a href="#FOR_HEALTH" class="nav-link">FOR HEALTH</a></li>
-                        <li class="nav-item"><a href="#FOR_HARMONY" class="nav-link">FOR HARMONY</a></li>
+                        <li class="nav-item"><a class="nav-link-active1" data-category="all">ALL</a></li>
+                        <li class="nav-item"><a class="nav-link" data-category="work">FOR WORK</a></li>
+                        <li class="nav-item"><a class="nav-link" data-category="health">FOR HEALTH</a></li>
+                        <li class="nav-item"><a class="nav-link" data-category="harmony">FOR HARMONY</a></li>
                     </ul>
                 </nav>
             </div>
 
-
             <div class="grid_container">
-                <div class="card_1">
+                <div class="card_1" data-category="work">
                     <img src="./assets/images/cardwork.png" class="img_cards" alt="workcard">
                     <div class="card_1text">
                         <h2 class="h2_colorBlue">FOR WORK</h2>
                         <h3 class="h3_gifts1">CONSOLE.LOG GURU</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="health">
                     <img src="./assets/images/cardhealth.png" class="img_cards" alt="healthcard">
                     <div class="card_1text">
                         <h2 class="h2_colorGreen">FOR HEALTH</h2>
                         <h3 class="h3_gifts1">STEP MASTER</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="work">
                     <img src="./assets/images/cardwork.png" class="img_cards" alt="workcard">
                     <div class="card_1text">
                         <h2 class="h2_colorBlue">FOR WORK</h2>
                         <h3 class="h3_gifts1">BUG MAGNET</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="work">
                     <img src="./assets/images/cardwork.png" class="img_cards" alt="workcard">
                     <div class="card_1text">
                         <h2 class="h2_colorBlue">FOR WORK</h2>
                         <h3 class="h3_gifts1">SHORTCUT CHEATER</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="health">
                     <img src="./assets/images/cardhealth.png" class="img_cards" alt="healthcard">
                     <div class="card_1text">
                         <h2 class="h2_colorGreen">FOR HEALTH</h2>
                         <h3 class="h3_gifts1">POSTURE LEVITATION</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="harmony">
                     <img src="./assets/images/cardharmony.png" class="img_cards" alt="harmonycard">
                     <div class="card_1text">
                         <h2 class="h2_colorPink">FOR HARMONY</h2>
                         <h3 class="h3_gifts1">BUG ACCEPTANCE GURU</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="health">
                     <img src="./assets/images/cardhealth.png" class="img_cards" alt="healthcard">
                     <div class="card_1text">
                         <h2 class="h2_colorGreen">FOR HEALTH</h2>
                         <h3 class="h3_gifts1">SNACK RESISTER</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="harmony">
                     <img src="./assets/images/cardharmony.png" class="img_cards" alt="harmonycard">
                     <div class="card_1text">
                         <h2 class="h2_colorPink">FOR HARMONY</h2>
                         <h3 class="h3_gifts1">ERROR LAUCHER</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="health">
                     <img src="./assets/images/cardhealth.png" class="img_cards" alt="healthcard">
                     <div class="card_1text">
                         <h2 class="h2_colorGreen">FOR HEALTH</h2>
                         <h3 class="h3_gifts1">HYDRATION BOT</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="work">
                     <img src="./assets/images/cardwork.png" class="img_cards" alt="workcard">
                     <div class="card_1text">
                         <h2 class="h2_colorBlue">FOR WORK</h2>
@@ -124,25 +130,24 @@
                     </div>
                 </div>
 
-                <div class="card_1">
+                <div class="card_1" data-category="harmony">
                     <img src="./assets/images/cardharmony.png" class="img_cards" alt="harmonycard">
                     <div class="card_1text">
                         <h2 class="h2_colorPink">FOR HARMONY</h2>
                         <h3 class="h3_gifts1">JOY CHARGER</h3>
                     </div>
                 </div>
-                <div class="card_1">
+
+                <div class="card_1" data-category="harmony">
                     <img src="./assets/images/cardharmony.png" class="img_cards" alt="harmonycard">
                     <div class="card_1text">
                         <h2 class="h2_colorPink">FOR HARMONY</h2>
                         <h3 class="h3_gifts1">SPONTANEOUS CODING<br>PHILOSOPHER</h3>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
-
 
     <footer class="footer container" id="contact">
         <section class="contacts_section">
@@ -153,7 +158,7 @@
                     <h3>CALL US</h3>
                 </a>
 
-                <a href="https://www.google.com/maps" target="_blank" class="contact_cards2">
+                <a href="https://maps.google.com" target="_blank" class="contact_cards2">
                     <img src="./assets/svg/christmas-tree.svg" class="contacts_image" alt="christmas-tree">
                     <p class="contacts_info">MAGIC FOREST</p>
                     <h3>MEET US</h3>
@@ -173,6 +178,16 @@
             </div>
         </section>
     </footer>
+
+    <button class="btnUp" id="btnUp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
