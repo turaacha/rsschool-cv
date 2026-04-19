@@ -1,0 +1,1334 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(236, 243, 248, 1);
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container,
+.hero,
+.gifts,
+.CTA,
+footer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Header*/
+
+header {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.nav a,
+.logo {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav a:hover {
+    color: rgba(255, 70, 70, 1);
+    border-radius: 12px;
+    background-color: rgba(255, 70, 70, 0.1);
+    padding: 8px 30px;
+}
+
+
+.logo:hover {
+    color: rgba(255, 70, 70, 1);
+    border-radius: 12px;
+    background-color: rgba(255, 70, 70, 0.1);
+    padding: 8px 62px;
+}
+
+
+
+.logo {
+    gap: 8px;
+    padding: 8px 62px;
+}
+
+.logo p {
+    margin: 0;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    padding-right: 35px;
+
+}
+
+.nav-link {
+    padding: 8px 25px;
+    display: block;
+}
+
+
+.burger-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.burger-menu span {
+    position: absolute;
+    left: 23px;
+    width: 18px;
+    height: 1px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.burger-menu span:first-child {
+    top: 17px;
+}
+
+.burger-menu span:last-child {
+    bottom: 17px;
+}
+
+
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    background-color: rgba(255, 70, 70, 1);
+}
+
+
+/*hero*/
+
+.hero {
+    background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 524px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.gift_yourself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.Cursive_text {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: "Allura", cursive;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.18em;
+    color: #FFFFFF;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+
+.button_explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 56px;
+    width: 235px;
+    background-color: #181C29;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin-bottom: 15px;
+}
+
+.button_explore:hover {
+    background-color: #FFFFFF;
+    color: #181C29;
+}
+
+
+/*about*/
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 648px;
+    width: 100%;
+    background-color: rgba(255, 70, 70, 1);
+    background-image: url('./assets/images/christmassnow.png');
+}
+
+.rectangle_about {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    max-width: 1276px;
+    width: calc(100% - 16px);
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.Cursive_text2 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: "Allura", cursive;
+    color: rgba(255, 70, 70, 1);
+}
+
+.Text_section2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    text-align: left;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+
+.Text_section2 h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 16%;
+    margin: 0;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 148%;
+    font-size: 16px;
+}
+
+.image_santa {
+    flex: 1;
+}
+
+.image_santa img {
+    object-fit: cover;
+    display: block;
+    width: 638px;
+    height: 528px;
+    border-radius: 20px;
+    gap: Space 0;
+    opacity: 1;
+
+}
+
+
+.slider_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.text_slider h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* slider */
+
+.row_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    gap: 19px;
+    background-image: url('./assets/images/christmassnow.png');
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.bigText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+
+}
+
+.row_image {
+    height: 200px;
+    width: 200px;
+}
+
+
+.row_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 0 80px;
+    gap: 20px;
+    margin: 0;
+}
+
+.arrow-button1 {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff4d4d;
+    border: 1px solid white;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transform: scaleX(-1);
+}
+
+.arrow-button {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff4d4d;
+    border: 1px solid white;
+    border-radius: 40%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.arrow-button:hover {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ffadad;
+}
+
+.arrow-button1:hover {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #ffadad;
+}
+
+/* Best_Gifts */
+
+.Best_Gifts {
+    background-image: url('./assets/images/christmassnow.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0 0;
+    gap: 15px;
+
+}
+
+.best_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.card_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(236, 243, 248, 1);
+    border-radius: 20px;
+    margin: 0;
+}
+
+.card_1text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 310px;
+    height: 112px;
+    gap: 0;
+    opacity: 1;
+    padding-top: 20px;
+
+}
+
+.img_cards {
+    width: 310px;
+    height: 230px;
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 8%;
+    font-style: SemiBold;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
+.h2_colorBlue,
+.h2_colorGreen,
+.h2_colorPink {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+
+h3:hover {
+    color: #FF4646;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.h2_colorBlue {
+    color: rgba(67, 97, 255, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.h2_colorGreen {
+    color: rgba(6, 164, 79, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+.h2_colorPink {
+    color: rgba(255, 67, 247, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+}
+
+
+
+/*CTA_section*/
+
+.CTA {
+    background-image: url('./assets/images/christmassnow.png'), url('./assets/images/CTA_snow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%, cover;
+    background-position: center;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.CTA_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px;
+
+}
+
+.CTA_main h2 {
+    padding-bottom: 15px;
+}
+
+
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 1);
+    max-width: 344px;
+    width: 100%;
+    height: 72px;
+    box-sizing: border-box;
+}
+
+.timer_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 30%;
+}
+
+.timer_code:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.timer_code h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0;
+}
+
+.timer_code h3 {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/*footer*/
+
+footer {
+    min-height: 496px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    color: #181C29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+}
+
+.contacts_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact_cards2 {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ECF3F8;
+    width: 417px;
+    height: 204px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.contact_cards2:hover {
+    background-color: #DDE7EF;
+    transform: translateY(-5px);
+}
+
+.contacts_info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contact_cards2 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 5px;
+    color: #000;
+}
+
+
+.Cursive_text3:hover {
+    color: #FF4646;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
+
+
+/* Gifts html other */
+
+.nav-link-active {
+    pointer-events: none;
+    cursor: default;
+    background-color: transparent;
+    color: #000;
+    background-color: rgba(255, 70, 70, 0.1);
+    padding: 8px 25px;
+    display: block;
+    border-radius: 12px;
+}
+
+.nav-link-active1 {
+    pointer-events: none;
+    cursor: default;
+    background-color: transparent;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    display: block;
+    border-radius: 12px;
+
+}
+
+
+.gifts {
+    min-height: 1394px;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url('./assets/images/bg-garland.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+}
+
+.gifts_h1 {
+
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 18%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.tabs {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 18px;
+    padding-bottom: 10px;
+
+}
+
+.tabs-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    padding: 0;
+}
+
+.tabs a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.tabs a:hover {
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+
+
+
+/*best Gifts html other*/
+
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 1270px;
+    margin: 0 auto;
+
+}
+
+
+
+.card_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(236, 243, 248, 1);
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.card_1text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    border-radius: 20px;
+    width: 100%;
+    height: 112px;
+    padding: Space 20;
+    gap: 8;
+    opacity: 1;
+    padding-top: 20px;
+
+}
+
+
+.img_cards {
+    width: 310px;
+    height: 230px;
+
+}
+
+
+.h3_gifts1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 8%;
+    font-style: SemiBold;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+}
+
+.h3_gifts1:hover {
+    color: #FF4646;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
+.Cursive_text3 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: "Allura", cursive;
+    color: black;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+.h3_gifts1,
+.h2_colorBlue,
+.h2_colorPink,
+.h2_colorGreen {
+    margin: 5px;
+    padding: 0;
+}
+
+.btnUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fca9a9;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.btnUp:hover {
+    background-color: #e33e3e;
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    .section {
+        width: 100%;
+    }
+
+    .hero {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+        background-repeat: no-repeat;
+        background-size: 1250px auto;
+        background-position: center 1px;
+        min-height: 590px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself {
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself h1 {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .Cursive_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .About {
+        padding-top: -5px;
+        min-height: auto;
+    }
+
+
+    .rectangle_about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .Text_section2 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: 376px;
+    }
+
+    .Text_section2 br {
+        display: none;
+    }
+
+
+    .image_santa {
+        width: 500px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .slider_1 {
+        padding-top: 50px;
+    }
+
+
+    .row_slider {
+        padding: 0;
+        margin-top: -18px;
+        margin-left: 5px;
+
+
+    }
+
+    .row_button {
+        padding: 0;
+        margin-top: -20px;
+    }
+
+
+    .Best_Gifts {
+        padding-top: 18px;
+    }
+
+
+
+    header {
+        padding: 0 20px;
+    }
+
+    .CTA {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/CTA_snow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100%, cover;
+        background-position: center 60px;
+        max-width: 768px;
+        width: 100%;
+        min-height: 668px;
+    }
+
+    .CTA_main {
+        padding-top: 80px;
+
+    }
+
+
+
+    .CTA_main h2 {
+        padding-bottom: 20px;
+    }
+
+
+    .CTA_main,
+    .gifts_main,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+    .timer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 344px;
+
+    }
+
+    .footer container {
+        max-width: 768px;
+        width: 100%;
+        min-height: 928px;
+    }
+
+
+
+    .contacts_cards {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-top: 20px;
+
+    }
+
+    .contact_cards2 {
+        max-width: 100%;
+        width: 752px;
+        min-height: 204px;
+    }
+
+    .contacts_info {
+        font-size: 18px;
+    }
+
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #FFFFFF;
+        z-index: 10;
+        transition: right 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav.is-open {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0;
+    }
+
+    .nav-link {
+        font-size: 24px;
+    }
+
+
+
+    .card_1,
+    .img_cards,
+    .card_1text {
+        width: 100%;
+        max-width: 310px;
+    }
+
+
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+        margin-bottom: 70px;
+        gap: 10px;
+    }
+
+    .gifts-page .contacts_cards {
+        margin-top: -55px;
+        padding-top: 0;
+    }
+
+    .gifts {
+        background-image: url('./assets/images/bg-garland.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+    }
+
+    .gifts_h1 {
+        margin-bottom: -5px;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+
+    .tabs-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+
+    }
+
+    .tabs-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        padding: 8px 8px 12px 8px;
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+
+    .logo {
+        gap: 8px;
+        padding: 8px 10px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 380px) {
+
+
+    .section {
+        width: 100%;
+    }
+
+    .hero {
+        background-image: url('./assets/images/christmassnow.png'), url('./assets/images/christmasball.png');
+        background-repeat: no-repeat;
+        background-size: 1400px auto;
+        background-position: center 1px;
+        min-height: 590px;
+        padding-bottom: 0;
+    }
+
+
+    .gift_yourself {
+        margin-top: -10px;
+    }
+
+
+    .gift_yourself h1 {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .Cursive_text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .About {
+        padding-top: 40px;
+        min-height: auto;
+    }
+
+    .About__container {
+        margin-top: 0;
+    }
+
+
+    .rectangle_about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Text_section2 {
+        padding-top: 20px;
+        width: 100%;
+        padding: 28px 18px;
+        margin: 0 auto;
+    }
+
+    .Text_section2 br {
+        display: none;
+    }
+
+    .image_santa {
+        padding-top: 15px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .slider_1 {
+        padding-top: 60px;
+    }
+
+
+    .row_slider {
+        padding: 0;
+        margin-top: -18px;
+        margin-left: 5px;
+
+
+    }
+
+    .row_button {
+        padding: 0;
+        margin-top: -20px;
+    }
+
+
+    .Best_Gifts {
+        padding-top: 18px;
+    }
+
+
+    .contact_cards2 {
+        width: 364px;
+        height: 204px;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+
+
+    .gifts_h1 {
+        background-size: 100% auto;
+        padding: 40px 10px 0px 10px;
+        margin-top: 20px;
+
+    }
+
+
+    .tabs-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+
+    }
+
+
+
+}
