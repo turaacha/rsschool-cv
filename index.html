@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <button class="burger-menu" id="burger-toggle"></button>
+
+    <aside class="sidebar">
+        <div class="selector">
+            <h3>Period</h3>
+            <select name="month" id="month" class="month-selector">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <select name="year" id="year" class="year-selector">
+                <option value="2025">2025</option>
+                <option value="2026" selected>2026</option>
+                <option value="2027">2027</option>
+            </select>
+        </div>
+        <nav class="projects_emplyees">
+            <a href="#" id="nav-projects" class="elements">Projects</a>
+            <a href="#" id="nav-employees" class="elements active">Employees</a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+
+        <div class="employees-content" id="employees-section">
+            <div class="content">
+                <h1>Employees</h1>
+                <div style="display: flex; gap: 10px;">
+                    <button class="button-employees" onclick="openEmployeeSidebar()">+ Add employee</button>
+                </div>
+            </div>
+
+            <table class="employees-table">
+                <thead>
+                    <tr>
+                        <th class="filter" onclick="sortData('alpha')" style="cursor:pointer">Name ↕</th>
+                        <th class="filter">Surname</th>
+                        <th class="filter">Age</th>
+                        <th class="filter">Position</th>
+                        <th class="filter" onclick="sortData('salary')" style="cursor:pointer">Salary ↕</th>
+                        <th class="filter">Est. Payment</th>
+                        <th class="filter">Status</th>
+                        <th class="filter">Project</th>
+                        <th class="filter">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employees-list-body"></tbody>
+            </table>
+        </div>
+
+
+        <div class="project-content hidden" id="projects-section">
+            <div class="content">
+                <h1>Projects</h1>
+                <div class="add-button-projects">
+                    <button class="button-projects" onclick="openProjectSidebar()">+ Add project</button>
+                    <button class="button-projects" onclick="openSeedModal()">Seed Data</button>
+                </div>
+            </div>
+            <table class="projects-table">
+                <thead>
+                    <tr>
+                        <th class="filter" onclick="sortProjects('company')" style="cursor:pointer">Company Name ↕</th>
+                        <th class="filter">Project Name</th>
+                        <th class="filter" onclick="sortProjects('budget')" style="cursor:pointer">Budget ↕</th>
+                        <th class="filter">Capacity</th>
+                        <th class="filter">Employees</th>
+                        <th class="filter">Total Salaries</th>
+                        <th class="filter">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="projects-list-body"></tbody>
+            </table>
+        </div>
+
+
+        <div id="overlay" class="overlay"></div>
+
+
+        <div id="add-employee-sidebar" class="right-sidebar">
+            <div class="right-sidebar-header">
+                <h2>Add New Employee</h2>
+                <button id="close-employee-sidebar" class="close-btn" onclick="closeAllSidebars()">&times;</button>
+            </div>
+            <form id="add-employee-form" class="sidebar-form">
+                <label>Name</label>
+                <input type="text" name="name" required placeholder="Enter Name">
+
+                <label>Surname</label>
+                <input type="text" name="surname" required placeholder="Enter Surname">
+
+                <label>Date of Birth</label>
+                <input type="date" name="birthday" required>
+
+                <label>Position</label>
+                <input type="text" name="position" required placeholder="Job title">
+
+                <label>Salary</label>
+                <input type="number" name="salary" required placeholder="Salary in $">
+
+                <label>Initial Project (Optional)</label>
+                <select name="project">
+
+                </select>
+
+                <button type="submit" class="save-btn">Save Employee</button>
+            </form>
+        </div>
+
+        <div id="add-project-sidebar" class="right-sidebar">
+            <div class="right-sidebar-header">
+                <h2>Add New Project</h2>
+                <button id="close-project-sidebar" class="close-btn" onclick="closeAllSidebars()">&times;</button>
+            </div>
+            <form id="add-project-form" class="sidebar-form">
+                <label>Project Name</label>
+                <input type="text" name="projectName" required placeholder="e.g. iOS Redesign">
+
+                <label>Company Name</label>
+                <input type="text" name="company" required placeholder="e.g. Apple">
+
+                <label>Budget</label>
+                <input type="number" name="budget" required placeholder="Total budget">
+
+                <label>Employee Capacity</label>
+                <input type="number" name="capacity" required placeholder="Max employees">
+
+                <button type="submit" class="save-btn">Save Project</button>
+            </form>
+        </div>
+
+
+        <div id="assign-modal" class="modal-overlay">
+            <div class="modal-content">
+                <h4>Assign Employee to Project</h4>
+                <p id="assign-employee-name" style="font-weight: bold; margin-bottom: 15px; color: #555;"></p>
+
+                <label for="modal-project-select">Choose Project:</label>
+                <select id="modal-project-select">
+
+                </select>
+
+                <div class="modal-buttons">
+                    <button class="btn-cancel" onclick="closeAssignModal()">Cancel</button>
+                    <button class="btn-confirm" onclick="confirmAssignment()">Save</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="seed-modal" class="modal-overlay">
+            <div class="modal-content seed-modal-content">
+                <div class="modal-header">
+                    <h4>Seed Data from Month</h4>
+                    <button class="close-btn" onclick="closeSeedModal()">&times;</button>
+                </div>
+                <p>Select a month to copy its data to the current month (<span id="target-month-name"></span>):</p>
+
+                <div class="table-wrapper">
+                    <table class="seed-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Month</th>
+                                <th>Projects</th>
+                                <th>Employees</th>
+                                <th>Total Est. Income</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="seed-table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
